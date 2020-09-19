@@ -1,6 +1,8 @@
 # ProSeed for Farming Simulator 19
 ![For Farming Simulator 19](https://img.shields.io/badge/Farming%20Simulator-19-FF7C00.svg) [![Releases](https://img.shields.io/github/release/stijnwop/proSeed.svg)](https://github.com/stijnwop/proSeed/releases)
 
+###### Readme in German can be found [here](README-de.md).
+
 ProSeed adds a bundle of functionality to enhance sowing machines in the game.
 With ProSeed you're able to create tramlines (with optional pre-emergence marking), halfside shutoff for creating the perfect tramlines, fertilizer shutoff and active feedback with sounds.
 
@@ -77,7 +79,7 @@ Use the halfside shutoff function for creating the first track.
 When using GuidanceSteering, the first track of GS must be aligned at the edge of the field and set to zero (`ALT + HOME`). 
 For the second track shift the GS track by half the working width towards the field edge.
 
-A description of possible working widths and distances is given in this neat PDF file: [proSeed-eng.pdf](https://github.com/stijnwop/proSeed/raw/master/docs/ProSeed.pdf) (German: [proSeed-de.pdf](https://github.com/stijnwop/proSeed/raw/master/docs/ProSeed-de.pdf))
+A description of possible working widths and distances is given in this neat PDF file: [proSeed.pdf](https://github.com/stijnwop/proSeed/raw/master/docs/ProSeed.pdf) (Page 1: German; Page 2: English)
 ## Copyright
 Copyright (c) 2020 [Wopster](https://github.com/stijnwop).
 All rights reserved.

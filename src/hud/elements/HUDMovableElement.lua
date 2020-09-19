@@ -26,6 +26,9 @@ function HUDMovableElement:loadFromXMLFile(xmlFile, key)
     local y = getXMLFloat(xmlFile, key .. ".position#y")
 
     if x ~= nil and y ~= nil then
+        x = MathUtil.clamp(x, 0, 1)
+        y = MathUtil.clamp(y, 0, 1)
+
         local height = self:getHeight()
         local _, parentY = self.parent:getPosition()
         local _, marginHeight = self.parent:scalePixelToScreenVector(InteractiveHUD.SIZE.BOX_MARGIN)
@@ -37,8 +40,8 @@ end
 function HUDMovableElement:saveToXMLFile(xmlFile, key)
     local x, y = self:getPosition()
     if x ~= nil and y ~= nil then
-        setXMLFloat(xmlFile, key .. ".position#x", x)
-        setXMLFloat(xmlFile, key .. ".position#y", y)
+        setXMLFloat(xmlFile, key .. ".position#x", MathUtil.clamp(x, 0, 1))
+        setXMLFloat(xmlFile, key .. ".position#y", MathUtil.clamp(y, 0, 1))
     end
 end
 
